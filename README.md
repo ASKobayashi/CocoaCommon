@@ -24,13 +24,15 @@ release mode.
 Assertions
 ----------
 The following assertions are included:
-    * AAPRECONDITION
-    * AAPOSTCONDITION
-    * AAINVARIANT
-    * AAASERT
-
+    * PRE
+    * POST
+    * ASSERT
+    * DUMP
+    
 These are used to assert that conditions are true, and if in debug mode, abort 
-program execution if the assertion failed.
+program execution if the assertion failed.  PRE, POST and ASSERT all equal, except to let you
+specify that it's a PRE condition, POST condition, generic ASSERT.
+DUMP works like PRE, POST, and ASSERT, except it will *always* abort.
 
 Who are you?
 ------------
